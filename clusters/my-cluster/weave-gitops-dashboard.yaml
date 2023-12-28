@@ -15,10 +15,11 @@ metadata:
   namespace: flux-system
 spec:
   interval: 0h5m0s
-  type: oci
-  url: oci://ghcr.io/weaveworks/charts
+  # type: oci
+  # url: oci://ghcr.io/weaveworks/charts
+  url: https://helm.gitops.weave.works
 ---
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
+apiVersion: helm.toolkit.fluxcd.io/v2beta2
 kind: HelmRelease
 metadata:
   annotations:
