@@ -14,7 +14,7 @@ metadata:
   name: ww-gitops
   namespace: flux-system
 spec:
-  interval: 0h1m0s
+  interval: 0h5m0s
   type: oci
   url: oci://ghcr.io/weaveworks/charts
 ---
@@ -34,7 +34,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: ww-gitops
-  interval: 0h1m0s
+  interval: 0h5m0s
   values:
     adminUser:
       create: true
